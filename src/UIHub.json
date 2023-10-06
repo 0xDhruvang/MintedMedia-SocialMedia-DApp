@@ -1,0 +1,355 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_thumbnailOfFile",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_indexOfFile",
+        "type": "uint256"
+      }
+    ],
+    "name": "buyDesign",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_fileType",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_thumbnail",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_name",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_description",
+        "type": "string"
+      },
+      {
+        "internalType": "string[]",
+        "name": "_filesToShow",
+        "type": "string[]"
+      },
+      {
+        "internalType": "string[]",
+        "name": "_file",
+        "type": "string[]"
+      }
+    ],
+    "name": "postDesign",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "allDesigners",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "designer",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "allDesigns",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "creator",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "PostType",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "thumbnail",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "description",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "allFiles",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "fileThumbnail",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "file",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "actualFileName",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "enteredFileName",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "fileValue",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "sold",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_thumbnail",
+        "type": "string"
+      }
+    ],
+    "name": "getAddedFiles",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "fileThumbnail",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "file",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "actualFileName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "enteredFileName",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fileValue",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "sold",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct UIHub.AddedFile[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAllDesigns",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "creator",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "PostType",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "thumbnail",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "internalType": "string[]",
+            "name": "filesToShow",
+            "type": "string[]"
+          },
+          {
+            "internalType": "string[]",
+            "name": "fileToBuy",
+            "type": "string[]"
+          }
+        ],
+        "internalType": "struct UIHub.Post[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_thumbnailOfFile",
+        "type": "string"
+      }
+    ],
+    "name": "getCreator",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_add",
+        "type": "address"
+      }
+    ],
+    "name": "getMyNfts",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "creator",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "PostType",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "thumbnail",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "actualFileName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "enteredFileName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "file",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct UIHub.NFT[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "users",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "nftOwner",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

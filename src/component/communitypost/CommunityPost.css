@@ -1,0 +1,41 @@
+.community-post {
+  margin-top: 150px;
+  width: 100vh;
+}
+
+.community-post .posts {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  width: 70%;
+}
+.community-post .posts .each-post {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.community-post .posts .each-post .profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  background-color: gray;
+}
+.top-community-post {
+  display: flex;
+  gap: 1rem;
+}
+.top-community-post p {
+  font-weight: 500;
+}
+.post-text {
+  font-size: 16px;
+}
+.bottom-community-post {
+  display: flex;
+  gap: 1rem;
+}
+
+.community-post hr {
+  opacity: 20%;
+  margin: 20px 0;
+}
